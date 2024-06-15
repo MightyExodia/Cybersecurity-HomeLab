@@ -35,6 +35,7 @@ We are going to be using VirtualBox as our Hypervisor.
 ![Screenshot of windows 10 installtion media tool giving the option to select to Customise options or use recommended settings](/img/Windows10tool2.png)
 9. Select the **ISO file** option on the next window
 ![Screenshot of windows 10 installtion media tool giving the option to select to USB Flash drive or ISO file](/img/Windows10tool2.png)
+10. Follow the next steps and wait until the ISO is created
 
 ## Setting up Windows 10 in VirtualBox
 
