@@ -19,4 +19,5 @@ We are going to be using VirtualBox as our Hypervisor.
     - Go into the directory where your Windows VirtualBox file has been downloaded to
     - Right-Click anywhere in the folder and select "Open in Terminal"
         > may have to select 'Show more options'
-    -  
+    -  In the Terminal, type in "Get-FileHash Virtual" and hit the **TAB** button. This will autocomplete the file name
+        > output should look like this: Get-FileHash .\VirtualBox-7.0.6-155176-Win.exe
