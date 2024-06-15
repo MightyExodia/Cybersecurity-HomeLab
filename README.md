@@ -27,4 +27,7 @@ We are going to be using VirtualBox as our Hypervisor.
     - If they match, you can proceed with the installation
 3. Install VirtualBox by following the installation wizard. Accept the default settings
 4. There are many places from which you could download a Windows 10 ISO file however, in this guide, we're going to be creating our own Windows 10 ISO file
-5. Go to the download page for [Windows 10](https://www.microsoft.com/en-ca/software-download/windows10) and click on the **Download tool now**
+5. Go to the download page for [Windows 10](https://www.microsoft.com/en-ca/software-download/windows10) and click on the **Download tool now** under the header **Create Windows 10 installation media**
+6. Once downloaded, run the tool and **Accept** the notices and license terms
+7. On the next window, Select **Create installation media**
+![Screenshot of windows 10 installtion media tool giving the option to select to Upgrade PC or Create installation media](/img/Windows10tool.png)
