@@ -1,7 +1,7 @@
 # Cybersecurity-HomeLab
 - We're installing 2 Virtual machines for the HomeLab
-    - 1. Kali Linux (Attacker Machine)
-    - 2. Windows 10 
+    - Kali Linux (Attacker Machine)
+    - Windows 10 
 
 # What is a HomeLab
 A HomeLab is a personal, self-contained environment for learning, testing, and experimenting with various technologies
