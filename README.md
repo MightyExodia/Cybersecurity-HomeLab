@@ -12,5 +12,5 @@ VirtualBox: Virtualization software to create and manage virtual machines
 We are going to be using VirtualBox as our Hypervisor.
 
 1. Go to [VirtualBox](https://www.virtualbox.org/wiki/Downloads) downloads page, and select the download package for your current operating system. 
-    [!NOTE]
-    In this tutorial, we will be downloading the package for "Windows hosts"
+    > [!NOTE]
+    > In this tutorial, we will be downloading the package for "Windows hosts"
