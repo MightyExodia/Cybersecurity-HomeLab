@@ -11,4 +11,6 @@ VirtualBox: Virtualization software to create and manage virtual machines
 ## Installing the Hypervisor and Windows 10
 We are going to be using VirtualBox as our Hypervisor.
 
-1. Download and install VirtualBox from here
+1. Go to [VirtualBox](https://www.virtualbox.org/wiki/Downloads) downloads page, and select the download package for your current operating system. 
+    [!NOTE]
+    In this tutorial, we will be downloading the package for "Windows hosts"
