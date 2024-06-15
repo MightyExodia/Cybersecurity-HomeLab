@@ -46,3 +46,4 @@ We are going to be using VirtualBox as our Hypervisor.
     > You can adjust these settings based on your system's capabilities
 4. Leave the **Virtual Hard Disk** settings as is
 5. Shows the summary of your options selected - hit Finish
+6. 
