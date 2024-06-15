@@ -20,4 +20,4 @@ We are going to be using VirtualBox as our Hypervisor.
     - Right-Click anywhere in the folder and select "Open in Terminal"
         > may have to select 'Show more options'
     -  In the Terminal, type in "Get-FileHash Virtual" and hit the **TAB** button. This will autocomplete the file name. Hit **ENTER** and you should be able to see the Hash for comparison
-    ![Screenshot of terminal window showing the output of the above step](/img/terminal.png)
+    ![Screenshot of terminal window showing the output of the above step](/img/WindowsTerminal.png)
