@@ -10,7 +10,7 @@ A HomeLab is a personal, self-contained environment for learning, testing, and e
 VirtualBox: Virtualization software to create and manage virtual machines
 
 # Guide
-## Installing the Hypervisor and Windows 10
+## Installing the Hypervisor and creating the Windows 10 ISO
 We are going to be using VirtualBox as our Hypervisor.
 
 1. Go to [VirtualBox](https://www.virtualbox.org/wiki/Downloads) downloads page, and select the download package for your current operating system. 
@@ -33,3 +33,16 @@ We are going to be using VirtualBox as our Hypervisor.
 ![Screenshot of windows 10 installtion media tool giving the option to select to Upgrade PC or Create installation media](/img/Windows10tool.png)
 8. You can customise the options given or **tick the box** to use the recommended options. We're going to use the recommended options
 ![Screenshot of windows 10 installtion media tool giving the option to select to Customise options or use recommended settings](/img/Windows10tool2.png)
+9. Select the **ISO file** option on the next window
+![Screenshot of windows 10 installtion media tool giving the option to select to USB Flash drive or ISO file](/img/Windows10tool2.png)
+
+## Setting up Windows 10 in VirtualBox
+
+1. In the VirtualBox main window, click on **New**
+2. Type a name for your Virtual Machine and Select the location of the above windows 10 ISO file
+    > If you want to install windows 10 manually, untick the **Skip Unattended Installation** box
+    > we're going to tick the box for this guide
+3. On the next windows, set the Base Memory to 4GB and 1 CPU processor
+    > You can adjust these settings based on your system's capabilities
+4. Leave the **Virtual Hard Disk** settings as is
+5. Shows the summary of your options selected - hit Finish
