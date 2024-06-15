@@ -19,5 +19,9 @@ We are going to be using VirtualBox as our Hypervisor.
     - Go into the directory where your Windows VirtualBox file has been downloaded to
     - Right-Click anywhere in the folder and select "Open in Terminal"
         > may have to select 'Show more options'
-    -  In the Terminal, type in "Get-FileHash Virtual" and hit the **TAB** button. This will autocomplete the file name. Hit **ENTER** and you should be able to see the Hash for comparison
+    -  In the Terminal, type in "Get-FileHash Virtual" and hit the **TAB** button. This will autocomplete the file name. Hit **ENTER** and you should be able to see the Hash
     ![Screenshot of terminal window showing the output of the above step](/img/WindowsTerminal.png)
+    - Compare the hash you got from the terminal with the hash provided in the VirtualBox website.
+    - If they match, you can proceed with the installation
+3. Install VirtualBox by following the installation wizard. Accept the default settings
+4. Once installed, open VirtualBox and create a new virtual machine. Name it "Windows
