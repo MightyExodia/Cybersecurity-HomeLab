@@ -1,3 +1,3 @@
 # Cybersecurity-HomeLab
 
-**HomeLab Setup**
+# What is a HomeLab
