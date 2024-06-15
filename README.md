@@ -31,3 +31,5 @@ We are going to be using VirtualBox as our Hypervisor.
 6. Once downloaded, run the tool and **Accept** the notices and license terms
 7. On the next window, Select **Create installation media**
 ![Screenshot of windows 10 installtion media tool giving the option to select to Upgrade PC or Create installation media](/img/Windows10tool.png)
+8. You can customise the options given or **tick the box** to use the recommended options. We're going to use the recommended options
+![Screenshot of windows 10 installtion media tool giving the option to select to Customise options or use recommended settings](/img/Windows10tool2.png)
