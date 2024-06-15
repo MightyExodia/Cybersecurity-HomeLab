@@ -18,5 +18,5 @@ We are going to be using VirtualBox as our Hypervisor.
     - When you go into the above checksums link, it will provide you with a list of SHA256 hashes
     - Go into the directory where your Windows VirtualBox file has been downloaded to
     - Right-Click anywhere in the folder and select "Open in Terminal"
-        - > may have to select 'Show more options'
+        > may have to select 'Show more options'
     -  
