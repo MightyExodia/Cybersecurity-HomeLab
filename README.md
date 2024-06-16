@@ -68,4 +68,7 @@ We are going to be using VirtualBox as our Hypervisor.
 3. Click on the **Virtual Machines** option
 4. Select 64-bit (or 32-bit if your PC doesn't support 64-bit) and click on the **VirutalBox** option
     - You can check whether your pc is 32-bit or 64-bit by doing the following
-        - Right-click on **This PC** (or **Computer** in older versions of Windows)
+        - Click on the 'Start' button on your taskbar
+        - Search for 'System Information'
+        - Under 'System Type' is where you will find whether your pc is 32-bit (x86) or 64-bit (x64)
+        ![Screenshot of system information in windows 10 that shows whether your pc is a 32-bit or 64-bit machine](/img/systeminfo.png)
