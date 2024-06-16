@@ -7,8 +7,9 @@
 A HomeLab is a personal, self-contained environment for learning, testing, and experimenting with various technologies
 
 # Tools
-VirtualBox: Virtualization software to create and manage virtual machines
-Splunk: A big data platform that collects and manages massive volumes of data and searching for information within it
+- VirtualBox: Virtualization software to create and manage virtual machines
+- Splunk: A big data platform that collects and manages massive volumes of data and searching for information within it
+- Sysmon: A windows system service and device driver that monitors and logs system activity to the Windows event log even through reboots
 
 # Things to note
 
@@ -147,3 +148,7 @@ We are going to be using VirtualBox as our Hypervisor.
 6. Click on "Start Searching"
 7. Choose an "Event Code' you want to search for and type it in the "Search" bar
 ![Screenshot of splunk search for EventCode 4672](/img/SplunkSearch.png)
+
+## Using Sysmon
+
+1. Download and install Sysmon
