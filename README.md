@@ -137,3 +137,13 @@ We are going to be using VirtualBox as our Hypervisor.
         - ping 192.168.20.11
         > This works!
 
+## Using Splunk to view Event Logs
+
+1. Download and install Splunk
+2. Once installed, open Splunk and click on "Add Data"
+3. Under "Local Event Logs", Select "Application, Security & System" and hit Next
+4. In "Input Settings", leave everything as default
+5. Click on "Review" and then "Submit"
+6. Click on "Start Searching"
+7. Choose an "Event Code' you want to search for and type it in the "Search" bar
+[Screenshot of splunk search for EventCode 4672](/img/SplunkSearch.png)
