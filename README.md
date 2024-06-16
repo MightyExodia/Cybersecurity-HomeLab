@@ -64,3 +64,4 @@ We are going to be using VirtualBox as our Hypervisor.
 2. We have 2 options for downloading Kali
     - Installer Images (similar to the ISO file for Windows 10)
     - Pre-built images (Virutal Machine)
+    > For this tutorial, we will be downloading the pre-built image and importing into VirtualBox
