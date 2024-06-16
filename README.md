@@ -57,3 +57,10 @@ We are going to be using VirtualBox as our Hypervisor.
 13. In the 'Where do you want to install Windows' - you can create your own partition or leave as is - hit Next
 14. Installation Windows 10 will begin
 15. Once installation is complete, you are ready to use your Windows 10 VM in VirtualBox
+
+## Setting up Kali Linux in VirtualBox
+
+1. Go to the [Kali Linux](https://www.kali.org/) and hit Donwload
+2. We have 2 options for downloading Kali
+    > Installer Images (similar to the ISO file for Windows 10)
+    > Pre-built images (Virutal Machine)
