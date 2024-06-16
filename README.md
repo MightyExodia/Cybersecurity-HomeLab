@@ -8,6 +8,7 @@ A HomeLab is a personal, self-contained environment for learning, testing, and e
 
 # Tools
 VirtualBox: Virtualization software to create and manage virtual machines
+Splunk: A big data platform that collects and manages massive volumes of data and searching for information within it
 
 # Things to note
 
