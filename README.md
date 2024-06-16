@@ -59,7 +59,7 @@ We are going to be using VirtualBox as our Hypervisor.
 15. Once installation is complete, you are ready to use your Windows 10 VM in VirtualBox
 
 ## Setting up Kali Linux in VirtualBox
-> Please note that the default credentials to log into Kali Linx is **"kali/kali"**
+> Please note that the default credentials to log into Kali Linux is **"kali/kali"**
 
 1. Go to the [Kali Linux](https://www.kali.org/) and hit Donwload
 2. We have 2 options for downloading Kali
@@ -73,4 +73,7 @@ We are going to be using VirtualBox as our Hypervisor.
         - Search for 'System Information'
         - Under 'System Type' is where you will find whether your pc is 32-bit (x86) or 64-bit (x64)
         ![Screenshot of system information in windows 10 that shows whether your pc is a 32-bit or 64-bit machine](/img/systeminfo.png)
-5. 
+5. Once the download has completed, go ahead and extract the contents of the .7z file to where you prefer
+6. Go into the folder where you extracted Kali, and then double click on the ".vbox" file
+    > Blue icon
+7. In the VirtualBox window, you will see the Kali Linux OS imported
