@@ -9,6 +9,24 @@ A HomeLab is a personal, self-contained environment for learning, testing, and e
 # Tools
 VirtualBox: Virtualization software to create and manage virtual machines
 
+# Things to note
+
+1. Sandbox Enviorments
+    - Just by creating a virtual machine, doesn't mean you're in a sandbox enviornment
+2. Create Snapshots
+    - This is basically a backup, of a point in time. This can be used to restore the system if anything goes wrong. Always create a Snapshot before you test anyting on your system
+    - To create a Snapshot:
+        - Go to VirtualBox
+        - Select the VM you want to create a snapshot for and click on the "Bullets" menu 
+        - Click on Snapshots
+        - Click on "Take" to create a new snapshot and set a name for your snapshot
+    - To restore a Snapshot:
+        - Select the Snapshot you require to rollback to and click on "Restore"
+3. Specifications
+    - Make sure not to over spec the Virtual Machine if your PC doesn't have the sufficient resources (RAM, CPU etc.)
+
+
+
 # Guide
 ## Installing the Hypervisor and creating the Windows 10 ISO
 We are going to be using VirtualBox as our Hypervisor.
