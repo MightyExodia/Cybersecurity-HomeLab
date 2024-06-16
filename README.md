@@ -59,6 +59,7 @@ We are going to be using VirtualBox as our Hypervisor.
 15. Once installation is complete, you are ready to use your Windows 10 VM in VirtualBox
 
 ## Setting up Kali Linux in VirtualBox
+> Please note that the default credentials to log into Kali Linx is **"kali/kali"**
 
 1. Go to the [Kali Linux](https://www.kali.org/) and hit Donwload
 2. We have 2 options for downloading Kali
@@ -72,3 +73,4 @@ We are going to be using VirtualBox as our Hypervisor.
         - Search for 'System Information'
         - Under 'System Type' is where you will find whether your pc is 32-bit (x86) or 64-bit (x64)
         ![Screenshot of system information in windows 10 that shows whether your pc is a 32-bit or 64-bit machine](/img/systeminfo.png)
+5. 
