@@ -146,4 +146,4 @@ We are going to be using VirtualBox as our Hypervisor.
 5. Click on "Review" and then "Submit"
 6. Click on "Start Searching"
 7. Choose an "Event Code' you want to search for and type it in the "Search" bar
-[Screenshot of splunk search for EventCode 4672](/img/SplunkSearch.png)
+![Screenshot of splunk search for EventCode 4672](/img/SplunkSearch.png)
