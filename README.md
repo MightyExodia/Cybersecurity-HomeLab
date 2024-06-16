@@ -158,3 +158,8 @@ We are going to be using VirtualBox as our Hypervisor.
 4. Ensure that if you have a config file, it is in the same folder as Sysmon
 5. Type in Sysmon64 and hit **TAB** to auto-complete and add to the line -i sysmonconfig.xml
     > Should look like this: .\Sysmon64.exe -i sysmonconfig.xml
+
+    > -i = Install service and drive. Optionally take a configuration file
+6. A window will pop-up asking to agree to terms - hit Agree. **This will then install Sysmon**
+7. To view the logs, open Event Viewer
+    - Navigate to "Applications and Services Logs" > "Microsoft" > "Windows" > "Sysmon" > "Operational"
