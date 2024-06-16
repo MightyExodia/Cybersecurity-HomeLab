@@ -99,3 +99,8 @@ We are going to be using VirtualBox as our Hypervisor.
 ## Properly configuring the Virtual Machine
 > This is important for both Windows 10 and Kali Linux VMs
 > This is to ensure that whatever it is you're doing on your VM, doesn't spill over the your Host system
+
+1. In the VirtualBox windows, Select your VM (Windows or Kali) and then click on "Settings"
+2. Select "Network" on the left side-pane
+> If you want to test tools and have access to the internet, you can leave the default setting of **"NAT"**
+> If you want to test Malware, you can select **"Internal Netwrok"** which will have the virtual machines in their own network which no access to the Host System or the Internet
