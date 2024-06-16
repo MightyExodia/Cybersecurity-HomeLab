@@ -102,7 +102,9 @@ We are going to be using VirtualBox as our Hypervisor.
 
 1. In the VirtualBox windows, Select your VM (Windows or Kali) and then click on "Settings"
 2. Select "Network" on the left side-pane
-> [!NOTE]
 > If you want to test tools and have access to the internet, you can leave the default setting of **"NAT"**
 
 > If you want to test Malware, you can select **"Internal Netwrok"** which will have the virtual machines in their own network which no access to the Host System or the Internet
+
+> Since we're going to be analysing Malware, we will change the Network
+3. In the "Adapter 1" tab, click on the "Attached to:" drop down box and select **"Internal Network"** and set a name for it
