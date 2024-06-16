@@ -65,3 +65,7 @@ We are going to be using VirtualBox as our Hypervisor.
     - Installer Images (similar to the ISO file for Windows 10)
     - Pre-built images (Virutal Machine)
     > For this tutorial, we will be downloading the pre-built image and importing into VirtualBox
+3. Click on the **Virtual Machines** option
+4. Select 64-bit (or 32-bit if your PC doesn't support 64-bit) and click on the **VirutalBox** option
+    - You can check whether your pc is 32-bit or 64-bit by doing the following
+        - Right-click on **This PC** (or **Computer** in older versions of Windows)
