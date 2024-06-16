@@ -108,3 +108,31 @@ We are going to be using VirtualBox as our Hypervisor.
 
 > Since we're going to be analysing Malware, we will change the Network
 3. In the "Adapter 1" tab, click on the "Attached to:" drop down box and select **"Internal Network"** and set a name for it
+> Do this for the other VM's you want part of the same network
+4. Now we need to assign a static IP address for both the Windows and Kali Linux machones
+    - For Windows:
+        - On your taskbar, right-click on the 'globe' icon and select "Open Network & Internet Settings"
+        - Scroll down and clock on 'Change adapter options'
+        - Right-click on "Ethernet" and select "Properties"
+        - Select "Internet Protocol Version 4" abd click on "Properties"
+        - Click on "Use the following IP address"
+        - Set the IP address to something like **"192.168.20.10"** and hit "Ok"
+            - To check the IP address - open up command prompt and type in "ipconfig"
+    - For Kali Linux:
+        - right-click on the "Ethernet" icon at the top right corner
+        - Select "Edit Connections"
+        - Select "Wired connection 1" and click on the "gear" icon at the bottom left of the window
+        - Select IPv4 Settings
+        - Click on "Method" and select "Manual"
+        - Click on "Add" and set the IP address to something like **"192.168.20.11"** and Netmask as **"24"**
+        - Hit Save
+            - to check the IP address - right click anywhere on the screen and select "Open Terminal Here"
+            - type in "ip addr show" or "ifconfig" and hit enter
+5. Now we check if we have connectivity between our 2 machines (windows & Kali Linux)
+    - To ping the Windows machine on Kali Linux:
+        - ping 192.168.20.10
+        > This wont work because the Windows Firewall is blocking inbound ICMP traffic
+    - To ping the Kali Linux machine on Windows:
+        - ping 192.168.20.11
+        > This works!
+
