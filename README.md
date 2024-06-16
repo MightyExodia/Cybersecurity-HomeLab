@@ -46,5 +46,14 @@ We are going to be using VirtualBox as our Hypervisor.
 3. On the next windows, set the Base Memory to 4GB and 1 CPU processor
     > You can adjust these settings based on your system's capabilities
 4. Leave the **Virtual Hard Disk** settings as is
-5. Shows the summary of your options selected - hit Finish
-6. 
+5. Shows the summary of options selected - hit Finish
+6. Power on the VM by clicking on the **Start** button
+7. Once the VM has loaded up, it will display the Windows 1o setup window
+8. Change options as needed or leave as default and hit Next - then Install Now
+9. On the **Activate Windows** screen, select 'I don't have a product key'
+10. Select Windows 10 Pro and hit Next
+11. Accept the license terms and hit Next
+12. Select 'Custom: Install Windows only (advanced)'
+13. In the 'Where do you want to install Windows' - you can create your own partition or leave as is - hit Next
+14. Installation Windows 10 will begin
+15. Once installation is complete, you are ready to use your Windows 10 VM in VirtualBox
