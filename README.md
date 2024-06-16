@@ -140,7 +140,7 @@ We are going to be using VirtualBox as our Hypervisor.
 
 ## Using Splunk to view Event Logs
 
-1. Download and install Splunk
+1. Download and install [Splunk - Enterprise Edition](https://www.splunk.com/en_us/download.html)
 2. Once installed, open Splunk and click on "Add Data"
 3. Under "Local Event Logs", Select "Application, Security & System" and hit Next
 4. In "Input Settings", leave everything as default
@@ -151,4 +151,10 @@ We are going to be using VirtualBox as our Hypervisor.
 
 ## Using Sysmon
 
-1. Download and install Sysmon
+1. Download and install [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+2. Open Windows Powershell as Administrator
+3. Ensure that your Powershell directory is set to the same location as the Sysmon folder
+    - You can change the directory by typing **cd C:\Users\Test\Downloads\Sysmon**
+4. Ensure that if you have a config file, it is in the same folder as Sysmon
+5. Type in Sysmon64 and hit **TAB** to auto-complete and add to the line -i sysmonconfig.xml
+    > Should look like this: .\Sysmon64.exe -i sysmonconfig.xml
