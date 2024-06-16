@@ -95,3 +95,7 @@ We are going to be using VirtualBox as our Hypervisor.
 6. Go into the folder where you extracted Kali, and then double click on the ".vbox" file
     > Blue icon
 7. In the VirtualBox window, you will see the Kali Linux OS imported
+
+## Properly configuring the Virtual Machine
+> This is important for both Windows 10 and Kali Linux VMs
+> This is to ensure that whatever it is you're doing on your VM, doesn't spill over the your Host system
