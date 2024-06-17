@@ -164,6 +164,11 @@ We are going to be using VirtualBox as our Hypervisor.
 7. To view the logs, open Event Viewer
     - Navigate to "Applications and Services Logs" > "Microsoft" > "Windows" > "Sysmon" > "Operational"
 
-## Using NMAP
+## Using NMAP (Kali Linux)
 
-1. First we will grab the IP address of the Kali
+1. First we will grab the IP address of the Kali machine
+    > Terminal > ifconfig
+2. Type in "nmap -A 192.168.20.10 -Pn" - Where the IP address is the Windows machine we're targetting
+    > nmap -h : will show us all the available options of nmap that's available
+    > -A : Enable OS detection, version detection, script scanning, and traceroute
+    > -Pn : Treat all hosts as online -- skip host discovery
