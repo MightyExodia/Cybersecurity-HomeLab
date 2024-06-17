@@ -272,3 +272,4 @@ We are going to be using VirtualBox as our Hypervisor.
 
     > We can clean it up more by selecting the events we want to see by: index=endpoint {db846932-b693-666f-4605-000000000a00} |table _time,ParentImage,Image,CommandLine
 41. Now we can see what commands were run
+![Screenshot of the search result of the process_guid](/img/SplunkSearch2.png)
