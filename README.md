@@ -220,4 +220,4 @@ We are going to be using VirtualBox as our Hypervisor.
 21. Type in "netstat -anob" (Shows all in-use ports and the application which use them)
     > We want to see if an established connection to our Kali machine is there
 22. Scroll up the terminal window and find the connection
-[Screenshot of the terminal windows that displays the established connection with our kali machine](/img/WindowsTerminal2.png)
+![Screenshot of the terminal windows that displays the established connection with our kali machine](/img/WindowsTerminal2.png)
