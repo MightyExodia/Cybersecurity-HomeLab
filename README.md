@@ -138,7 +138,7 @@ We are going to be using VirtualBox as our Hypervisor.
         - ping 192.168.20.11
         > This works!
 
-## Using Splunk to view Event Logs
+## Using Splunk to view Event Logs (Windows 10)
 
 1. Download and install [Splunk - Enterprise Edition](https://www.splunk.com/en_us/download.html)
 2. Once installed, open Splunk and click on "Add Data"
@@ -149,7 +149,7 @@ We are going to be using VirtualBox as our Hypervisor.
 7. Choose an "Event Code' you want to search for and type it in the "Search" bar
 ![Screenshot of splunk search for EventCode 4672](/img/SplunkSearch.png)
 
-## Using Sysmon
+## Using Sysmon (Windows 10)
 
 1. Download and install [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
 2. Open Windows Powershell as Administrator
@@ -163,3 +163,7 @@ We are going to be using VirtualBox as our Hypervisor.
 6. A window will pop-up asking to agree to terms - hit Agree. **This will then install Sysmon**
 7. To view the logs, open Event Viewer
     - Navigate to "Applications and Services Logs" > "Microsoft" > "Windows" > "Sysmon" > "Operational"
+
+## Using NMAP
+
+1. First we will grab the IP address of the Kali
