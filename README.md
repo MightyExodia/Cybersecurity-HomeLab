@@ -213,6 +213,8 @@ We are going to be using VirtualBox as our Hypervisor.
 16. Now we move over to our **Windows 10 Machine** and do the following:
     - Disable Windows Defender
     - Use a web browser to download and execute our malware
+
+### Windows 10
 17. Start > Search > Windows Security > Virus & threat protection > Manage settings> Turn off Real-time protection
 18. Open a web browser and navigate to **http://192.168.20.11:9999** and we will see our **Resume.pdf.exe** file
 19. Download and execute the file
@@ -221,3 +223,5 @@ We are going to be using VirtualBox as our Hypervisor.
     > We want to see if an established connection to our Kali machine is there
 22. Scroll up the terminal window and find the connection
 ![Screenshot of the terminal windows that displays the established connection with our kali machine](/img/WindowsTerminal2.png)
+
+### Kali Linux
