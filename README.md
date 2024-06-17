@@ -261,5 +261,14 @@ We are going to be using VirtualBox as our Hypervisor.
     > **process:** cmd.exe
 
     > **process_id:** 3648
+    
+    > **process_guid:** {db846932-b693-666f-4605-000000000a00}
+
+    > **parent_process_id:** 6564
 
     > What the above is telling us is that Resume.pdf.exe had spawned command prompt which had the process_id of 3648
+40. Now we can use the "process_id" or the "process_guid" to query our data to see what the command prompt had done, by using rhe "parent_process_id"
+    > Search for: index=endpoint {db846932-b693-666f-4605-000000000a00}
+
+    > We can clean it up more by selecting the events we want to see by: index=endpoint {db846932-b693-666f-4605-000000000a00} |table _time,ParentImage,Image,CommandLine
+41. Now we can see what commands were run
