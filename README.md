@@ -235,3 +235,31 @@ We are going to be using VirtualBox as our Hypervisor.
 26. Type in "ipconfig" to see a list of IPv4 and IPv6 addresses, subnet mask, and default gateway for all adapters.
 27. Now we go back to our Windows 10 machine to see what sort of Telemetry it's generated using **Splunk**
 
+### Windows 10
+28. First we need to make sure **Splunk** is configured to ingest **Sysmon** logs
+29. Go into the folder where Splunk is installed and see if you have an **"inputs.conf"** file
+    > ### C:\Program Files\Splunk\etc\system\local
+
+    > If not, we copy it from the **default** folder and place it in the **local** folder
+30. Then we edit the **inputs.conf** file using Notepad to ensure that Splunk is configured properly
+31. Then we will restart the Splunk Service
+    > Search > Services > Splunkd Service > Restart
+32. Next we need to create an Index called "Endpoint"
+    > Splunk Web (127.0.0.1:8000) > Settings > Indexes > New Index > type in **endpoint**
+33. Then at the top of the page we go to Apps > Search & Reporting then type in "index = endpoint"
+34. Since the Sysmon data isn't parsed automatically, we can do so by downloading an app in Splunk
+    > Apps > Find more apps > Search for "sysmon" > Download **Splunk Add-on for Sysmon** > Install
+35. Then go back to Apps > Search & Reporting and search for our Kali Linux Machine
+    > index=endpoint 192.168.20.11
+36. Now if we check the **"dest_port"** - we can see that the machine with that IP address has been targetting port number 3389 (RDP) on our test machine (Windows 10)
+37. Now we can check what our Malware looks like which was called "Resume.pdf.exe"
+    > index=endpoint Resume.pdf.exe
+38. In the EventCode section, we can see how many alerts were created
+39. If we expand the first event, we can scroll down and see the following
+    > **ParentImage:** Resume.pdf.exe
+
+    > **process:** cmd.exe
+
+    > **process_id:** 3648
+
+    > What the above is telling us is that Resume.pdf.exe had spawned command prompt which had the process_id of 3648
