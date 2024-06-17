@@ -223,5 +223,8 @@ We are going to be using VirtualBox as our Hypervisor.
     > We want to see if an established connection to our Kali machine is there
 22. Scroll up the terminal window and find the connection
 ![Screenshot of the terminal windows that displays the established connection with our kali machine](/img/WindowsTerminal2.png)
+23. Now we go back to our **Kali Machine** and we should see that we have an open shell in our Handler
 
 ### Kali Linux
+24. We can see the connection in our handler
+![screenshot of the kali linux terminal window showing the established connection with our windows 10 machine](/img/KaliTerminal.png)
