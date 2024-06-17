@@ -170,5 +170,7 @@ We are going to be using VirtualBox as our Hypervisor.
     > Terminal > ifconfig
 2. Type in "nmap -A 192.168.20.10 -Pn" - Where the IP address is the Windows machine we're targetting
     > nmap -h : will show us all the available options of nmap that's available
+
     > -A : Enable OS detection, version detection, script scanning, and traceroute
+    
     > -Pn : Treat all hosts as online -- skip host discovery
