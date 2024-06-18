@@ -1,7 +1,4 @@
 # Secure Virtualization Environment with Incident Analysis
-- We're installing 2 Virtual machines for the HomeLab
-    - Kali Linux (Attacker Machine)
-    - Windows 10 
 
 ## Objective
 The objective of this project is to create a secure sandboxed environment using VirtualBox, leveraging tools like Splunk, Sysmon, and Metasploit (Msfvenom) for monitoring, analysing, and responding to security incidents. The project also aims to simulate attacks and analyse their impact within the isolated environment to enhance cybersecurity awareness and incident response skills.
