@@ -16,6 +16,8 @@ The objective of this project is to create a secure sandboxed environment using 
 - Documentation: Create detailed guides for setup, tool installation, and incident response procedures.
 
 ## Tools Used
+- Windows 10 (for VM)
+- Kali Linux (for VM)
 - VirtualBox: Virtualization software to create and manage virtual machines
 - Splunk: A big data platform that collects and manages massive volumes of data and searching for information within it
 - Sysmon: A windows system service and device driver that monitors and logs system activity to the Windows event log even through reboots
